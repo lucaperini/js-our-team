@@ -29,7 +29,7 @@ const team = [
     role: 'Graphic Designer',
     image: 'barbara-ramos-graphic-designer.jpg',
     },
-  ];
+];
 
 for (let name in team){
     console.log(name, ":", team[name]);
@@ -41,3 +41,17 @@ for (let role in team){
 for (let image in team){
     console.log(image, ":", team[image]);
 }
+
+
+for (let i=0; i <team.length; i++){
+    document.getElementById('name').innerHTML += 
+    team[i].name + " | " + team[i].role + " | " + `img/${team[i].image}` + `<br>`;
+}
+
+
+
+
+
+
+     
+    
