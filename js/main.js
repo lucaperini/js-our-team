@@ -31,6 +31,8 @@ const team = [
     },
 ];
 
+//MILESTONE 1
+
 for (let name in team){
     console.log(name, ":", team[name]);
 }
@@ -42,7 +44,11 @@ for (let image in team){
     console.log(image, ":", team[image]);
 }
 
+//MILESTONE 2
 
 for (let i=0; i <team.length; i++){
-    document.getElementById('name').innerHTML += `<img src="img/${team[i].image}" class="picture" alt="">` + `<br>` + team[i].name + "" + " " + `<em>${team[i].role}</em>`;
+    document.getElementById('name').innerHTML += 
+    team[i].name + " | " + team[i].role + " | " + `img/${team[i].image}` + `<br>`;
 }
+
+
