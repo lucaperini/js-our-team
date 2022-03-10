@@ -33,15 +33,8 @@ const team = [
 
 //MILESTONE 1
 
-for (let name in team){
-    console.log(name, ":", team[name]);
-}
-for (let role in team){
-    console.log(role, ":", team[role]);
-}
-
-for (let image in team){
-    console.log(image, ":", team[image]);
+for (let i=0; i < team.length; i++){
+    console.table(team[i]);
 }
 
 //MILESTONE 2
